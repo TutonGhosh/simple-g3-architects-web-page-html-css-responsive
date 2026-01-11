@@ -7,11 +7,14 @@
 
 /* Shared Styles */
 .fw{
-    max-width: 75%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .display-flex{
     display: flex;
+}
+.text-center{
+    text-align: center;
 }
 .primary-bg{
     background-color: rgba(255, 144, 14, 0.1);
@@ -30,6 +33,17 @@
 }
 .dark-5{
     color: #D0D0D0;
+}
+.primary-btn{
+    width: 180px;
+    height: 64px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 25px;
 }
 
 /* Navbar Styles */
@@ -53,3 +67,38 @@
     font-weight: 500;
 }
 
+/* Banner Styles */
+.banner-content{
+    max-width: 868px;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+}
+.banner-description{
+    margin-top: 30px;
+}
+.banner-content button{
+    margin-top: 30px;
+}
+.banner-img{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+
+/* Mobile Device Responsive */
+@media screen and (max-width: 576px) {
+    .nav, .nav-items{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav .brand{
+        margin-bottom: 0;
+    }
+}
