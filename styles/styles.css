@@ -7,26 +7,14 @@
 
 /* Shared Styles */
 .fw{
-    max-width: 1440px;
+    max-width: 75%;
     margin: 0 auto;
 }
 .display-flex{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.text-center{
-    text-align: center;
-}
-.primary-description{
-    color: #727272;
-    font-family: Work Sans;
-    font-style: Regular;
-    font-size: 16px;
-    font-weight: 400;
 }
 .primary-bg{
-    background: rgba(255, 144, 14, 0.1);
+    background-color: rgba(255, 144, 14, 0.1);
 }
 .dark-1{
     color: #131313;
@@ -35,7 +23,7 @@
     color: #424242;
 }
 .dark-3{
-    color: #727272;
+    columns: #727272;
 }
 .dark-4{
     color: #A1A1A1;
@@ -43,33 +31,21 @@
 .dark-5{
     color: #D0D0D0;
 }
-.dark-6{
-    color: #E7E7E7;
-}
-.dark-7{
-    color: #F3F3F3;
-}
-.btn-primary{
-    width: 180px;
-    height: 64px;
-    font-size: 18px;
-    font-weight: 500;
-    border: 0;
-    border-radius: 8px;
-    background-color: #FF900E;
-    color: #FFFFFF;
-}
 
 /* Navbar Styles */
-.nav, .brand{
-    font-family: Work Sans;
-    font-style: Bold;
+.nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
     font-size: 45px;
     font-weight: 700;
 }
+.nav-items{
+    gap: 50px;
+}
 .nav-item{
-    margin-right: 50px;
-    list-style: none;
+    list-style: none; 
 }
 .nav-link{
     text-decoration: none;
@@ -77,49 +53,3 @@
     font-weight: 500;
 }
 
-/* Banner Styles */
-.banner-content{
-    width: 862px;
-    height: 225px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-.banner-title{
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-.banner-content p{
-    margin-bottom: 30px;
-}
-.banner-img{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.banner-img img{
-    width: 100%;
-}
-
-
-
-/* Mobile Device Responsive */
-@media screen and (max-width: 576px) {
-    .nav, .nav-items{
-        flex-direction: column;
-    }
-    .nav-items{
-        margin: 0;
-    }
-    .banner-content, .nav{
-        width: calc(100% - 20px);
-        height: auto;
-        margin: 0 10px 0 10px;
-    }
-    .banner-img{
-        padding-top: 0px;
-    }
-    .banner-content{
-        margin-bottom: 50px;
-    }
-}
